@@ -23,7 +23,7 @@ export default {
 
   mounted() {
     axios
-      .get("http://jsonplaceholder.typicode.com/photos?_start=0&_limit=4")
+      .get("https://jsonplaceholder.typicode.com/photos?_start=0&_limit=4")
       .then((response) => {
         this.content = response.data.map((image) => {
           let newElement = {};
